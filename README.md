@@ -2,7 +2,7 @@
 
 "Über Leben" (about life) was a participatory workshop for the students of the Erich Kästner School.
 Inspired by animals, the students explored different movement behaviors, materials, and mechanisms to create a shape-changing interface.
-A project of Arne Mier and Jessica Broscheit. Supported by the Kulturagentinnen and the Körber Stiftung. 
+This project was supported by the Kulturagentinnen and the Körber Stiftung. 
 
 See virtual demo:
 https://wokwi.com/projects/364094521920113665
