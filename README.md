@@ -5,6 +5,7 @@ A participatory workshop for the students of the Erich Kästner School.
 A project of Arne Mier and Jessica Broscheit. Supported by the Kulturagentinnen and the Körber Stiftung. 
 
 
+![Test Image 8]([https://github.com/sicaaa/UeberLeben/blob/main/Circuit-HCSR04-Servo.png])
 
 See also demo: 
 HCSR04 Sensor - Servo
