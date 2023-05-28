@@ -15,6 +15,19 @@ https://wokwi.com/projects/364094521920113665
 - HC-SR04 Sensor
 - MG995 Servo Motor
 
+## Pin:
+
+HCSR04 Ultrasonic Sensor
+Red     | VCC     | +5VDC
+Yellow  | Trigger | Pin 11
+Green   | Echo    | Pin 12
+Black   | GND     | GND
+
+Servo Motor
+Red     | +5VDC
+Yellow  | Pin 9
+Black   | GND
+
 
 ![A screenshot of the circuit](https://github.com/sicaaa/UeberLeben/blob/main/Circuit-HCSR04-Servo.png)
 
