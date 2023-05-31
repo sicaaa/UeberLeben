@@ -73,13 +73,13 @@ void StartServoSweep() {
 void StartServoNoSweep() {
 myservo.write(0);                              // Move to position 1 with an angle of 0°
 delay(3000);                                   // The programme stops for 3 seconds.
-myservo.write(90);                             // Move to position 1 with an angle of 0°90°
+myservo.write(90);                             // Move to position 1 with an angle of 90°
 delay(3000);                                   // The programme stops for 3 seconds.
 }
 
 
 void SensorRead() {                             
-  digitalWrite(trigPin, LOW);                  // Read the signal from the sensor.
+  digitalWrite(trigPin, LOW);                  // Read the signal from the sensor without a library.
   delayMicroseconds(5);
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
