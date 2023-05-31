@@ -1,19 +1,21 @@
 /*
- 
+
   Projekt: Ultraschall Sensor steuert den Servo Motor
 
   HCSR04 Ultrasonic Sensor:
-  Kabel   | Sensor  | Arduino
-  Rot     | VCC     | +5VDC
-  Gelb    | Trigger | Pin 11
-  Grün    | Echo    | Pin 12
-  Schwarz | GND     | GND
+  Complete Guide for Ultrasonic Sensor HC-SR04 created by Rui Santos.
+  https://randomnerdtutorials.com
+  Cabel   | Sensor  | Arduino
+  Red     | VCC     | +5VDC
+  Yellow  | Trigger | Pin 11
+  Green   | Echo    | Pin 12
+  Black   | GND     | GND
 
   Servo:
   Kabel   | Arduino
-  Rot     | +5VDC
-  Gelb    | Pin 9
-  Schwarz | GND
+  Red     | +5VDC
+  Yellow  | Pin 9
+  Black   | GND
   
 */
 
@@ -38,7 +40,7 @@ void setup () {
 void loop () {
   SensorRead();
   
-  if (cm <= 10) {                  // Definiere einen Abstand in Centimeter, um den Servo zu aktivieren.
+  if (cm <= 10) {                      // Define a distance between 2-40 centimetres to activate the servo.
     StartServoSweep();
   }
   
@@ -57,7 +59,7 @@ void loop () {
 
 
 void StartServoSweep() {
-  for (pos = 0; pos <= 180; pos += 1) {       // Der Servo bewegt sich zwischen 0 und 180 Grad
+  for (pos = 0; pos <= 180; pos += 1) {        // The servo moves between 0 and 180 degrees.
     myservo.write(pos);
     delay(10);
   }
@@ -69,15 +71,15 @@ void StartServoSweep() {
 
 
 void StartServoNoSweep() {
-myservo.write(0); //Position 1 ansteuern mit dem Winkel 0°
-delay(1000); //Das Programm stoppt für 3 Sekunden
-myservo.write(90); //Position 2 ansteuern mit dem Winkel 90°
-delay(1000); //Das Programm stoppt für 3 Sekunden
+myservo.write(0);                              // Move to position 1 with an angle of 0°
+delay(3000);                                   // The programme stops for 3 seconds.
+myservo.write(90);                             // Move to position 1 with an angle of 0°90°
+delay(3000);                                   // The programme stops for 3 seconds.
 }
 
 
-void SensorRead() {
-  digitalWrite(trigPin, LOW);
+void SensorRead() {                             
+  digitalWrite(trigPin, LOW);                  // Read the signal from the sensor.
   delayMicroseconds(5);
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
