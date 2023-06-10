@@ -4,7 +4,7 @@
   Ultrasonic Sensor with Servo Motor
 
   HCSR04 Ultrasonic Sensor:
-  Complete Guide for Ultrasonic Sensor HC-SR04 created by Rui Santos.
+  Guide for Ultrasonic Sensor HC-SR04 created by Rui Santos.
   https://randomnerdtutorials.com
   
   Cabel   | Sensor  | Arduino
@@ -13,8 +13,11 @@
   Green   | Echo    | Pin 12
   Black   | GND     | GND
 
-  Servo:
-  Kabel   | Arduino
+  Servo Motor:
+  Guide for Servo Motor created by Arduino.
+  https://docs.arduino.cc/learn/electronics/servo-motors
+  
+  Cabel   | Arduino
   Red     | +5VDC
   Yellow  | Pin 9
   Black   | GND
